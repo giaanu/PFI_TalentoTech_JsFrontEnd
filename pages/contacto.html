@@ -1,15 +1,24 @@
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocarina Store</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src = "../scripts/script.js"></script>
+  <link rel="icon" href="../assets/img/icono.ico" sizes="16x16">
+</head>-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ocarina Hardware Store</title>
+  <title>Contacto - Mi Tienda</title>
   <link rel="stylesheet" href="../styles/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src = "../scripts/script.js"></script>
-  <link rel="icon" href="../assets/img/icono.ico" sizes="16x16">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="../scripts/script.js"></script>
 </head>
-
 <body>
 
   <header>
@@ -18,7 +27,7 @@
 
   <nav>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
+      <li><a href="../index.html">Inicio</a></li>
       <li><a href="productos.html">Productos</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="login.html">Login</a></li>
@@ -28,7 +37,7 @@
   <main>
     <section id="contacto">
       <h2>Escribinos</h2>
-      <form action="https://formspree.io/f/mzzvpplo" method="POST">
+      <form id="formulario-contacto" action="https://formspree.io/f/mzzvpplo" method="POST">
 
         <label for = "nombre">Nombre y Apellido: </label>
         <input type="text" id="nombre" name="nombre" required>
@@ -42,9 +51,17 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
+    <div id="popup" class="popup oculto">
+      <p>¡Mensaje enviado correctamente!</p>
+      <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Ocarina Store</p>
   </footer>
 </body>
+
+
+</html>
