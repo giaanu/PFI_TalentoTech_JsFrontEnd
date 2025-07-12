@@ -36,3 +36,39 @@ function mostrarPopup() {
 function cerrarPopup() {
   document.getElementById("popup").classList.add("oculto");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector("nav ul");
+  const estaLogueado = localStorage.getItem("usuarioLogueado") === "true";
+
+  if (nav && estaLogueado) {
+    const liLogin = nav.querySelector("a[href='login.html']")?.parentElement;
+    if (liLogin) {
+      liLogin.innerHTML = '<span>Usuario Registrado</span>';
+    }
+  }
+});
+
+// Mostrar cantidad de productos en el carrito
+function actualizarContadorCarrito() {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const total = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
+  
+  const enlaceCarrito = document.getElementById("nav-carrito");
+  if (enlaceCarrito) {
+    enlaceCarrito.textContent = `Carrito (${total})`;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  actualizarContadorCarrito();
+});
+function actualizarContadorCarrito() {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const total = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
+
+  const enlaceCarrito = document.getElementById("nav-carrito");
+  if (enlaceCarrito) {
+    enlaceCarrito.textContent = `Carrito (${total})`;
+  }
+}
