@@ -1,4 +1,4 @@
-# Ocarina Hardware Store
+# Ocarina Store
 
 Este proyecto es una página web para una tienda de hardware de computadoras. El objetivo es mostrar productos destacados, reseñas de clientes y permitir que los usuarios se pongan en contacto a través de un formulario.
 
