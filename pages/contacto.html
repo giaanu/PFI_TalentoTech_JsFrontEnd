@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocarina Hardware Store</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src = "../scripts/script.js"></script>
+  <link rel="icon" href="../assets/img/icono.ico" sizes="16x16">
+</head>
+
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="contacto">
+      <h2>Escribinos</h2>
+      <form id ="formulario-contacto" action="https://formspree.io/f/xgvkekde" method="POST">
+
+        <label for = "nombre">Nombre y Apellido: </label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electronico: </label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Tu mensaje: </label> 
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Popup de confirmación -->
+    <div id="popup" class="popup oculto">
+      <p>¡Mensaje enviado correctamente!</p>
+      <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ocarina Store</p>
+  </footer>
+</body>

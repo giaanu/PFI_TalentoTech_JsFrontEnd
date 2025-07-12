@@ -1,0 +1,91 @@
+/* CSS */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+
+  background-image: url("../assets/img/Ocarina.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header, footer{
+  background-color: #1e1e2f;
+  color: greenyellow;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #1e1e2f;
+}
+
+nav a{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+section#contacto {
+    padding: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button{
+    background-color: whitesmoke;
+    color: black;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #c4ffc4;
+    padding: 2rem;
+    border: 2px solid #4caf50;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oculto {
+    display: none;
+}
+
+h2 {
+    color: greenyellow;
+}
+
+label {
+    color: greenyellow;
+}
+
+p {
+    color: greenyellow;
+}
