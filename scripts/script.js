@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
             mostrarPopup();
             formulario.reset();
           } else {
-            alert("Error al enviar el mensaje.");
+            alert("Error al enviar el mensaje. Intenta nuevamente.");
           }
         })
-        .catch(() => {
-          alert("Ocurrió un problema. Intenta más tarde.");
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("Hubo un problema. Intenta más tarde.");
         });
     });
   }
@@ -49,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Mostrar cantidad de productos en el carrito
 function actualizarContadorCarrito() {
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   const total = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
@@ -63,12 +63,3 @@ function actualizarContadorCarrito() {
 document.addEventListener("DOMContentLoaded", () => {
   actualizarContadorCarrito();
 });
-function actualizarContadorCarrito() {
-  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-  const total = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
-
-  const enlaceCarrito = document.getElementById("nav-carrito");
-  if (enlaceCarrito) {
-    enlaceCarrito.textContent = `Carrito (${total})`;
-  }
-}

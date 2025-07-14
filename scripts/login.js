@@ -1,5 +1,4 @@
 //Login de prueba para redigir al usuario a la pagina de incio y que muestra "usuario registrado" para luego conectar con un backend funcional.
-
 document.addEventListener("DOMContentLoaded", () => {
   const formulario = document.getElementById("formulario-login");
   const mensaje = document.getElementById("mensaje-login");
@@ -15,8 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // Guardar estado de sesión (modo de prueba)
     localStorage.setItem("usuarioLogueado", "true");
 
+    // Redirigir al inicio
     window.location.href = "../index.html";
   });
 

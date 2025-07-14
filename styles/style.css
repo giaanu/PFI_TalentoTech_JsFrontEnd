@@ -127,6 +127,7 @@ p {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+  padding: 1rem;
 }
 
 .card-producto {
@@ -144,9 +145,10 @@ p {
 }
 
 .card-producto img {
-  height: 200px;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
-  margin-bottom: 1rem;
+  max-height: 200px; 
 }
 
 .card-producto h3 {

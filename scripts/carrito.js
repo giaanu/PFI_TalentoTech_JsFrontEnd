@@ -62,4 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   renderCarrito();
+
+  const btnVaciar = document.getElementById("vaciar-carrito");
+  if (btnVaciar) {
+    btnVaciar.addEventListener("click", () => {
+      if (confirm("¿Estás seguro de que querés vaciar el carrito?")) {
+        carrito = [];
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        renderCarrito();
+        actualizarContadorCarrito?.();
+      }
+    });
+  }
+
 });
