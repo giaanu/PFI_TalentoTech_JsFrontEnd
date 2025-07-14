@@ -1,21 +1,32 @@
-# Ocarina Store
+# 🛒 Ocarina Store
 
-Este proyecto es una página web para una tienda de hardware de computadoras. El objetivo es mostrar productos destacados, reseñas de clientes y permitir que los usuarios se pongan en contacto a través de un formulario.
+**Ocarina Store** es un sitio web responsive para una tienda de productos de tecnología, moda y hogar. Desarrollado como proyecto frontend, integra múltiples funcionalidades modernas como un carrito de compras dinámico, consumo de API REST, navegación fluida y un formulario de contacto funcional.
 
-## Estructura
+## 🚀 Características principales
 
-- `index.html`: Página principal estructurada con etiquetas semánticas (`header`, `nav`, `main`, `section`, `footer`).
-- `styles.css`: Archivo externo que aplica diseño y responsivo usando Flexbox, Grid y Media Queries.
+- ✅ Diseño responsive adaptable a dispositivos móviles y de escritorio.
+- 🛍️ Carrito de compras dinámico con persistencia en `localStorage`.
+- 🔄 Productos cargados automáticamente desde la API pública [FakeStoreAPI](https://fakestoreapi.com/).
+- 📩 Formulario de contacto conectado con [Formspree](https://formspree.io/) para envíos reales.
+- 🧭 Navegación interna fluida entre secciones y páginas.
+- ♿ Buenas prácticas de accesibilidad y SEO básico.
+- 🎨 Tipografía moderna mediante Google Fonts.
 
-## Diseño 
+## 📁 Estructura del proyecto
 
-- Navegación interna entre secciones (Inicio, Productos, Reseñas, Contacto).
-- Diseño que se adpata a dispositivos móviles y escritorio.
-- Uso de Google Fonts para tipografía moderna.
+- `index.html`: Página principal con bienvenida y sección "Quiénes Somos".
+- `productos.html`: Catálogo de productos cargado desde API.
+- `carrito.html`: Visualización de productos agregados al carrito.
+- `contacto.html`: Formulario de contacto funcional.
+- `login.html`: Formulario básico de login simulado.
+- `styles/style.css`: Estilos globales con Flexbox, Grid y Media Queries.
+- `scripts/`: Carpeta con archivos JavaScript para funcionalidades dinámicas (DOM, carrito, API, login, etc.).
 
-### Funcionalidades:
+## 🔧 Tecnologías usadas
 
-- Carrito de compras dinámico.
-- Formulario de contacto funcional con Formspree.
-- Consumo de API REST para mostrar productos.
-- Buenas prácticas de accesibilidad y SEO.
+- HTML5 semántico  
+- CSS3 con Flexbox y Grid  
+- JavaScript (DOM, `fetch`, `localStorage`)  
+- API REST (FakeStoreAPI)  
+- Formspree (envío de formularios)  
+- Google Fonts 
